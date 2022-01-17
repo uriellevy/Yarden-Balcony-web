@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./styles/Testimonials.scss";
 import { slider } from "../data";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 import { BsFacebook, BsPersonCircle } from "react-icons/bs";
 import { MdStars } from "react-icons/md";
 import { GoPrimitiveDot } from "react-icons/go";
@@ -26,11 +29,11 @@ const Testimonials = () => {
       </div>
       {slider.map((slide, idx) => (
         <div className={current === idx ? "tes-main" : "none"} key={slide.id}>
-          <FaArrowAltCircleRight
+          <BsFillArrowRightCircleFill
             className="tes-icon-right"
             onClick={nextHandler}
           />
-          <FaArrowAltCircleLeft
+          <BsFillArrowLeftCircleFill
             className="tes-icon-left"
             onClick={prevHandler}
           />

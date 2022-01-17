@@ -1,0 +1,37 @@
+.services {
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+
+    .services-logo {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  .card {
+    width: 70%;
+    height: 400px;
+    color: #000;
+    font-size: 29px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .services-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    }
+
+    h4 {
+      margin-top: 10px;
+    }
+  }
+}

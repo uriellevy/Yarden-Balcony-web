@@ -7,7 +7,7 @@ const Gallery = () => {
     <div className="gallery-container" id="gallery">
       <div className="gallery-header">
         <GrGallery className="gallery-icon" />
-        <h1>גלריה</h1>
+        <h1> גלריה מאירועים</h1>
       </div>
 
       <div className="gallery">

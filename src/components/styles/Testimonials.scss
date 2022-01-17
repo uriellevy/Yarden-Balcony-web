@@ -38,6 +38,14 @@
       top: 50%;
       right: 15px;
       cursor: pointer;
+      color: #888;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: 0.2s ease;
+      &:hover {
+        color: #f4f4f4;
+        background-color: #777;
+      }
     }
 
     .tes-icon-left {
@@ -46,6 +54,13 @@
       top: 50%;
       left: 15px;
       cursor: pointer;
+      color: #888;
+      background-color: #fff;
+      border-radius: 50%;
+      &:hover {
+        color: #f4f4f4;
+        background-color: #777;
+      }
     }
 
     .tes-main-top {

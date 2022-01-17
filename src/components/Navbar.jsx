@@ -8,6 +8,7 @@ import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const [showbar, setShowbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const showHandler = () => {
     setShowbar(true);
@@ -15,9 +16,18 @@ const Navbar = () => {
   const closeHandler = () => {
     setShowbar(false);
   };
-  console.log(showbar);
+
+  const backgroundChangeHandler = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 750) {
+      setNavbar(true);
+    } else setNavbar(false);
+  };
+
+  window.addEventListener("scroll", backgroundChangeHandler);
+
   return (
-    <div className="nav-container">
+    <div className={navbar ? "nav-container active" : "nav-container"}>
       <div className="nav-logo">
         <img
           src={require("../img/logo/במרפסת של ירדן-logos_white.png")}
@@ -34,20 +44,21 @@ const Navbar = () => {
             עמוד ראשי
           </a>
         </li>
+        <li className="nav-list-item">
+          <a href="#services" className="nav-link">
+            מה בתפריט
+          </a>
+        </li>
 
         <li className="nav-list-item">
           <a href="#gallery" className="nav-link">
             גלריה
           </a>
         </li>
+
         <li className="nav-list-item">
           <a href="#testimonials" className="nav-link">
             ממליצים
-          </a>
-        </li>
-        <li className="nav-list-item">
-          <a href="#" className="nav-link">
-            בלה בלה
           </a>
         </li>
       </ul>
@@ -56,28 +67,33 @@ const Navbar = () => {
       >
         <ImCross className="mobile-cross" onClick={closeHandler} />
         <li className="mobile-list-item">
-          <a href="#hero" className="mobile-link">
+          <a href="#hero" className="mobile-link" onClick={closeHandler}>
             עמוד ראשי
           </a>
           <AiOutlineHome className="mobile-icons" />
         </li>
         <li className="mobile-list-item">
-          <a href="#gallery" className="mobile-link">
+          <a href="#services" className="mobile-link" onClick={closeHandler}>
+            מה בתפריט
+          </a>
+          <GiMeatCleaver className="mobile-icons" />
+        </li>
+        <li className="mobile-list-item">
+          <a href="#gallery" className="mobile-link" onClick={closeHandler}>
             גלריה
           </a>
           <RiGalleryLine className="mobile-icons" />
         </li>
+
         <li className="mobile-list-item">
-          <a href="#testimonials" className="mobile-link">
+          <a
+            href="#testimonials"
+            className="mobile-link"
+            onClick={closeHandler}
+          >
             ממליצים
           </a>
           <AiOutlineLike className="mobile-icons" />
-        </li>
-        <li className="mobile-list-item">
-          <a href="#" className="mobile-link">
-            בלה בלה
-          </a>
-          <GiMeatCleaver className="mobile-icons" />
         </li>
       </ul>
     </div>
