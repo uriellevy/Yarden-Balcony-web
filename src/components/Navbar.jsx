@@ -6,9 +6,8 @@ import { GiMeatCleaver } from "react-icons/gi";
 import { RiGalleryLine } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 
-const Navbar = () => {
+const Navbar = ({ navbar, setNavbar }) => {
   const [showbar, setShowbar] = useState(false);
-  const [navbar, setNavbar] = useState(false);
 
   const showHandler = () => {
     setShowbar(true);
@@ -29,15 +28,14 @@ const Navbar = () => {
   return (
     <div className={navbar ? "nav-container active" : "nav-container"}>
       <div className="nav-logo">
-        <img
-          src={require("../img/logo/במרפסת של ירדן-logos_white.png")}
-          className="logo"
-        />
+        <a href="#hero">
+          <img
+            src={require("../img/logo/במרפסת של ירדן-logos_white.png")}
+            className="logo"
+          />
+        </a>
       </div>
-      <BiMenuAltRight
-        className={showbar ? "none" : "nav-bars"}
-        onClick={showHandler}
-      />
+
       <ul className="nav-ul">
         <li className="nav-list-item">
           <a href="#hero" className="nav-link">
@@ -62,6 +60,10 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <BiMenuAltRight
+        className={showbar ? "none" : "nav-bars"}
+        onClick={showHandler}
+      />
       <ul
         className={showbar ? "nav-mobile-active" : "nav-mobile-active hidden"}
       >

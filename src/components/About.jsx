@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <div className="about-header">
         <MdOutlinePhotoCameraFront className="about-icon" />
-        <h1 className="about-title">מי אני? </h1>
+        <h1 className="about-title">?מי אני </h1>
       </div>
       <div className="about-content">
         <p>

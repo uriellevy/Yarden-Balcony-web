@@ -13,6 +13,8 @@
   .nav-logo {
     display: flex;
     align-items: center;
+    margin-top: 10px;
+
     .logo {
       height: 165px;
       width: 165px;
@@ -60,13 +62,26 @@
 
 @media (max-width: 768px) {
   .nav-container {
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-logo {
+      display: flex;
+      margin-top: 8px;
+      .logo {
+        height: 150px;
+        width: 150px;
+      }
+    }
     .nav-bars {
       color: #fff;
       font-size: 40px;
       display: initial;
-      position: fixed;
-      top: 50px;
-      right: 30px;
+      margin-right: 30px;
+      // position: fixed;
+      // top: 50px;
+      // right: 30px;
       cursor: pointer;
       transition: 0.2s ease;
       &:hover {

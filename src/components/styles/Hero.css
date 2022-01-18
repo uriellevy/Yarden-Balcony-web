@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+  animation: appear 1s ease-out forwards;
 }
 
 .hero-btn {
@@ -47,10 +48,15 @@
 
 .hero-btn-1 {
   color: #fff;
+  text-decoration: none;
+  animation: appear-right 1s ease-out forwards;
 }
 
 .hero-btn-2 {
   background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  animation: appear-left 1s ease-out forwards;
 }
 
 .hero-btn-1:hover {
@@ -61,4 +67,73 @@
 .hero-btn-2:hover {
   color: #fff;
   background-color: transparent;
+}
+
+.hero-whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  font-size: 40px;
+  color: #25d366;
+  cursor: pointer;
+  transition: transform 1.5s cubic-bezier(0.7, 0.04, 0.66, 1.71);
+}
+
+.hero-whatsapp:hover {
+  transform: rotate(360deg);
+}
+
+/* .hero-phone {
+} */
+.phone-icon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 40px;
+  color: #34b7f1;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.phone-number {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  bottom: 25px;
+  right: 28px;
+  color: #777;
+  opacity: 1;
+}
+
+.phone-number a {
+  text-decoration: none;
+  color: #777;
+}
+
+.phone-hidden {
+  opacity: 0;
+}
+
+@keyframes appear-left {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes appear-right {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
