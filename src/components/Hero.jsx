@@ -18,21 +18,27 @@ const Hero = ({ navbar }) => {
         className="hero-typewriter"
         onInit={(typewriter) => {
           typewriter
-            .typeString("חווית בשרים עד למרפסת שלכם")
+            .typeString("חווית בשרים שלא תשכחו עד למרפסת שלכם")
             .pauseFor(2000)
-            .deleteChars(14)
+            .deleteAll()
+            // .deleteChars(14)
             .pauseFor(2000)
+            .typeString("תפריט בשרים מותאם לחזון שלכם")
+            .pauseFor(2000)
+            .deleteChars(16)
+            .pauseFor(1500)
             .typeString("במעשנה")
+            .deleteAll()
+            .typeString("חווית בשרים שלא תשכחו עד למרפסת שלכם")
             .start();
         }}
       />
-      <p className="hero-para">
-        אני גריל שף אסף סבח וזו הבסטה הנודדת שלי: יחד אנחנו מגיעים עד אליכם
-        היישר משוק מחנה יהודה הירושלמי, מעמיסים את כל הטוב שיש לשוק להציע,
-        ירקות, תבלינים, ריחות ואווירה עד לאירוע: חגיגת בשרים שכמוה עוד לא נראתה!
-      </p>
+      {/* <p className="hero-para">
+        אני גריל שף ירדן אדרי ובשר זאת האהבה הגדולה שלי בחיים. אני מאמין שערב
+        טוב חייב להסתיים עם בשר איכותי וכוס יין אדום
+      </p> */}
       <div className="hero-btns">
-        <a href="#" className="hero-btn hero-btn-1">
+        <a href="#contact" className="hero-btn hero-btn-1">
           {" "}
           צרו קשר עכשיו
         </a>
@@ -53,7 +59,7 @@ const Hero = ({ navbar }) => {
           className={showPhone ? "phone-number" : "phone-number phone-hidden"}
         >
           <h3>התקשרו אליי</h3>
-          <a href="#">054-7370666</a>
+          <a href="#contact">054-7370666</a>
         </div>
       </div>
     </div>

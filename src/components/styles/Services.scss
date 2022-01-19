@@ -1,9 +1,10 @@
 .services {
+  padding: 125px 20px 0 20px;
+
   &-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 130px;
 
     .services-logo {
       font-size: 30px;

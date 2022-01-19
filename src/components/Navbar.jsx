@@ -3,7 +3,7 @@ import "./styles/Navbar.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineHome, AiOutlineLike } from "react-icons/ai";
 import { GiMeatCleaver } from "react-icons/gi";
-import { RiGalleryLine } from "react-icons/ri";
+import { RiGalleryLine, RiContactsFill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 
 const Navbar = ({ navbar, setNavbar }) => {
@@ -96,6 +96,13 @@ const Navbar = ({ navbar, setNavbar }) => {
             ממליצים
           </a>
           <AiOutlineLike className="mobile-icons" />
+        </li>
+
+        <li className="mobile-list-item">
+          <a href="#contact" className="mobile-link" onClick={closeHandler}>
+            צור קשר
+          </a>
+          <RiContactsFill className="mobile-icons" />
         </li>
       </ul>
     </div>

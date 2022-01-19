@@ -22,16 +22,17 @@
   padding: 10px;
 }
 
-.hero-para {
+/* .hero-para {
   margin: 20px 10px;
   padding: 10px;
   max-width: 50%;
-}
+} */
 
 .hero-btns {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px 0 10px 0;
+  margin-top: 35px;
   animation: appear 1s ease-out forwards;
 }
 
@@ -83,15 +84,16 @@
   transform: rotate(360deg);
 }
 
-/* .hero-phone {
-} */
+.hero-phone {
+  cursor: pointer;
+}
+
 .phone-icon {
   position: fixed;
   bottom: 40px;
   right: 40px;
   font-size: 40px;
   color: #34b7f1;
-  cursor: pointer;
   opacity: 1;
 }
 
