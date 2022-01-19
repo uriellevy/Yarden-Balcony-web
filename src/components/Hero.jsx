@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/Hero.css";
 import Typewriter from "typewriter-effect";
 import { BsWhatsapp } from "react-icons/bs";
@@ -6,6 +6,16 @@ import { AiOutlinePhone } from "react-icons/ai";
 
 const Hero = ({ navbar }) => {
   const [showPhone, setShowPhone] = useState(false);
+  const [iconRotation, setIconRotation] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIconRotation((prev) => !prev);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, [iconRotation]);
+  // console.log(iconRotation);
+
   const showPhoneHandler = () => {
     setShowPhone(true);
     console.log(showPhone);
@@ -49,7 +59,9 @@ const Hero = ({ navbar }) => {
       </div>
 
       <a href="https://wa.me/972546888735" target="”_blank”">
-        <BsWhatsapp className="hero-whatsapp" />
+        <BsWhatsapp
+          className={iconRotation ? "hero-whatsapp rotate" : "hero-whatsapp"}
+        />
       </a>
       <div className="hero-phone" onClick={showPhoneHandler}>
         <AiOutlinePhone

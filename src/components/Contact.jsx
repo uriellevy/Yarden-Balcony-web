@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Contact.css";
 import { AiOutlineContacts } from "react-icons/ai";
 
+
 const Contact = () => {
   return (
     <div className="contact" id="contact">
@@ -9,7 +10,7 @@ const Contact = () => {
         <AiOutlineContacts className="header-icon" />
         <h1>להזמנות ויצירת קשר</h1>
       </div>
-      <div className="contact-form">
+      <form className="contact-form">
         <input
           type="text"
           placeholder="שם מלא*"
@@ -35,7 +36,7 @@ const Contact = () => {
         <button type="submit" className="contact-btn  form-control">
           שלח
         </button>
-      </div>
+      </form>
     </div>
   );
 };

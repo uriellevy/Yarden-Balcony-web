@@ -6,6 +6,7 @@ import Testimonials from "./Testimonials";
 import Services from "./Services";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Main = () => {
   const [navbar, setNavbar] = useState(false);
@@ -18,6 +19,7 @@ const Main = () => {
       <Gallery />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 };

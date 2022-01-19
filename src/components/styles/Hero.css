@@ -80,9 +80,13 @@
   transition: transform 1.5s cubic-bezier(0.7, 0.04, 0.66, 1.71);
 }
 
-.hero-whatsapp:hover {
+.rotate {
   transform: rotate(360deg);
 }
+
+/* .hero-whatsapp:hover {
+  transform: rotate(360deg);
+} */
 
 .hero-phone {
   cursor: pointer;

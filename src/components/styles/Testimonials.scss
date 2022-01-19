@@ -4,7 +4,7 @@
   align-items: center;
   margin-bottom: 30px;
   width: 100%;
-  padding-top: 125px;
+  padding-top: 130px;
 
   .tes-header {
     display: flex;
@@ -12,6 +12,7 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 30px;
+    color: #075e54;
 
     .tes-title {
       margin-left: 10px;
@@ -138,12 +139,12 @@
     justify-content: center;
     .dots {
       margin-right: 5px;
-      font-size: 20px;
-      color: #898f9c;
+      font-size: 22px;
+      color: #128c7e85;
     }
 
     .dots-active {
-      color: #000;
+      color: #075e54;
     }
   }
 }

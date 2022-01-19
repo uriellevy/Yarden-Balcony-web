@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles/Gallery.scss";
-import { GrGallery } from "react-icons/gr";
+import { RiGalleryFill } from "react-icons/ri";
 
 const Gallery = () => {
   return (
     <div className="gallery-container" id="gallery">
       <div className="gallery-header">
-        <GrGallery className="gallery-icon" />
+        <RiGalleryFill className="gallery-icon" />
         <h1> גלריה מאירועים</h1>
       </div>
 

@@ -9,6 +9,7 @@
   &-header {
     display: flex;
     align-items: center;
+    color: #075e54;
 
     .about-title {
       margin-bottom: 40px;
@@ -21,7 +22,7 @@
   }
   &-content {
     font-size: 20px;
-    text-align: right;
+    // text-align: right;
     width: 60%;
   }
 }
