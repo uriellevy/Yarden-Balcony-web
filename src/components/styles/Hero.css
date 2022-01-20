@@ -121,6 +121,12 @@
   opacity: 0;
 }
 
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 30px;
+  }
+}
+
 @keyframes appear-left {
   from {
     opacity: 0;
