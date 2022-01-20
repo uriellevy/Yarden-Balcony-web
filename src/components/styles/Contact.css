@@ -42,13 +42,13 @@
   outline: none;
 }
 
-/* .form-control::placeholder {
+.form-control::placeholder {
   margin: 5px 5px 0 0;
   float: right;
   color: #f4f4f4;
   font-size: 20px;
   font-weight: bold;
-} */
+}
 
 .form-message {
   height: 100px;
