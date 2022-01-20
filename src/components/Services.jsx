@@ -76,7 +76,7 @@ const Services = () => {
         </div>
         <div className="card">
           <img
-            src={require("../img/gallery/g-11.jpg")}
+            src={require("../img/services/hamburger.jpg")}
             alt=""
             className="services-image"
           />
