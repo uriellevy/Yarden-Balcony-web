@@ -68,6 +68,29 @@
 @media (max-width: 500px) {
   .contact {
     background: url("/src/img/contact.jpg") no-repeat center center/cover;
+    height: 50vh;
+  }
+
+  .contact .contact-header h1 {
+    font-size: 25px;
+  }
+
+  .contact-header .header-icon {
+    font-size: 30px;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .form-control::placeholder {
+    font-size: 15px;
+  }
+
+  .form-message {
+    height: 50px;
   }
 }
 
