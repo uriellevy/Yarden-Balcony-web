@@ -122,6 +122,9 @@
 }
 
 @media (max-width: 400px) {
+  .hero-container {
+    background: url("/src//img//hero.jpg") center center/cover no-repeat;
+  }
   .hero-title {
     font-size: 30px;
   }
