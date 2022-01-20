@@ -39,7 +39,7 @@ const Hero = ({ navbar }) => {
             .pauseFor(1500)
             .typeString("במעשנה")
             .deleteAll()
-            .typeString("חווית בשרים שלא תשכחו עד למרפסת שלכם")
+            .typeString("איש של בשר")
             .start();
         }}
       />

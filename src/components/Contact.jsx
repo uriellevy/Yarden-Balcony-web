@@ -29,7 +29,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
     // console.log(isLoading);
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 2000);
     // console.log(isLoading);
   };
   return (
