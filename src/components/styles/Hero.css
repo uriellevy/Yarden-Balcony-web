@@ -108,13 +108,13 @@
   position: fixed;
   bottom: 25px;
   right: 28px;
-  color: #777;
+  color: #555;
   opacity: 1;
 }
 
 .phone-number a {
   text-decoration: none;
-  color: #777;
+  color: #555;
 }
 
 .phone-hidden {

@@ -18,6 +18,10 @@ const Hero = ({ navbar }) => {
 
   const showPhoneHandler = () => {
     setShowPhone(true);
+
+    setTimeout(() => {
+      setShowPhone(false);
+    }, 15000);
     console.log(showPhone);
   };
 
