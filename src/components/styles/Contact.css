@@ -68,9 +68,13 @@
 @media (max-width: 500px) {
   .contact {
     background: url("/src/img/contact.jpg") no-repeat center center/cover;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
     height: 50vh;
   }
-
   .contact .contact-header h1 {
     font-size: 25px;
   }
