@@ -42,6 +42,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
         <input
           type="text"
           placeholder="שם מלא*"
+          required
           className="form-control"
           aria-label="Name"
           name="name"
@@ -50,6 +51,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
         <input
           type="text"
           placeholder="מס' טלפון*"
+          required
           className="form-control"
           aria-label="Phone Number"
           name="phone"
@@ -59,10 +61,10 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           type="text"
           aria-label="Message"
           placeholder="תוכן פניה*"
+          required
           className="form-control form-message"
           name="message"
           dir="rtl"
-          required
         />
         <button type="submit" className="contact-btn  form-control">
           שלח
