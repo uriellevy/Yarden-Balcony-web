@@ -18,7 +18,7 @@ const Navbar = ({ navbar, setNavbar }) => {
 
   const backgroundChangeHandler = () => {
     // console.log(window.scrollY);
-    if (window.scrollY >= 750) {
+    if (window.scrollY >= 550) {
       setNavbar(true);
     } else setNavbar(false);
   };
