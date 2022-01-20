@@ -47,3 +47,48 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .footer {
+    .copyright,
+    .media {
+      margin: 0;
+      padding: 0.3rem 0.5rem;
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+
+    .media {
+      ul {
+        li {
+          padding: 1rem 0.6rem 0 0.6rem;
+
+          .media-icon-1 {
+            color: #f4f4f4;
+            font-size: 28px;
+            transition: 0.3s ease;
+            border-radius: 20%;
+
+            &:hover {
+              color: #128c7e;
+              background-color: #fff;
+            }
+          }
+          .media-icon-2 {
+            color: #f4f4f4;
+            font-size: 31px;
+            transition: 0.3s ease;
+            border-radius: 20%;
+
+            &:hover {
+              color: #128c7e;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
