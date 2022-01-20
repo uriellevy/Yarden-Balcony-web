@@ -1,7 +1,7 @@
 .contact {
   background: url("/src/img/contact.jpg") no-repeat center center/cover fixed;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   margin-top: 70px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   overflow: hidden;

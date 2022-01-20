@@ -40,14 +40,14 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
       </div>
       <form className="contact-form" onSubmit={sendEmail}>
         <input
-          type="text"
-          placeholder="שם מלא*"
-          required
           className="form-control"
-          aria-label="Name"
           name="name"
-          dir="rtl"
+          type="text"
           id="name"
+          aria-label="Name"
+          placeholder="שם מלא *"
+          required
+          dir="rtl"
         />
         <input
           type="text"

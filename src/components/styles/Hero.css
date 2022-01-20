@@ -72,7 +72,7 @@
 
 .hero-whatsapp {
   position: fixed;
-  bottom: 100px;
+  bottom: 120px;
   right: 40px;
   font-size: 40px;
   color: #25d366;
@@ -94,7 +94,7 @@
 
 .phone-icon {
   position: fixed;
-  bottom: 40px;
+  bottom: 60px;
   right: 40px;
   font-size: 40px;
   color: #34b7f1;
