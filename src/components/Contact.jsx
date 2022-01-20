@@ -3,7 +3,7 @@ import "./styles/Contact.css";
 import { AiOutlineContacts } from "react-icons/ai";
 import emailjs from "emailjs-com";
 
-const Contact = () => {
+const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,6 +23,14 @@ const Contact = () => {
         }
       );
     e.target.reset();
+    setModalSubmit(true);
+    // console.log(modalSubmit);
+    setIsLoading(true);
+    // console.log(isLoading);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+    // console.log(isLoading);
   };
   return (
     <div className="contact" id="contact">
