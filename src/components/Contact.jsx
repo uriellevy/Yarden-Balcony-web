@@ -47,6 +47,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           aria-label="Name"
           name="name"
           dir="rtl"
+          id="name"
         />
         <input
           type="text"
@@ -56,6 +57,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           aria-label="Phone Number"
           name="phone"
           dir="rtl"
+          id="phone"
         />
         <input
           type="text"
@@ -65,6 +67,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           className="form-control form-message"
           name="message"
           dir="rtl"
+          id="message"
         />
         <button type="submit" className="contact-btn  form-control">
           שלח
