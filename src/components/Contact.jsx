@@ -59,8 +59,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           dir="rtl"
           id="phone"
         />
-        <input
-          type="text"
+        <textarea
           aria-label="Message"
           placeholder="תוכן פניה*"
           required
@@ -68,7 +67,7 @@ const Contact = ({ modalSubmit, setModalSubmit, isLoading, setIsLoading }) => {
           name="message"
           dir="rtl"
           id="message"
-        />
+        ></textarea>
         <button type="submit" className="contact-btn  form-control">
           שלח
         </button>

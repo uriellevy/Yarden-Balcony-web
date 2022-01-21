@@ -47,10 +47,6 @@ const Hero = ({ navbar }) => {
             .start();
         }}
       />
-      {/* <p className="hero-para">
-        אני גריל שף ירדן אדרי ובשר זאת האהבה הגדולה שלי בחיים. אני מאמין שערב
-        טוב חייב להסתיים עם בשר איכותי וכוס יין אדום
-      </p> */}
       <div className="hero-btns">
         <a href="#contact" className="hero-btn hero-btn-1">
           {" "}
