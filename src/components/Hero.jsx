@@ -62,7 +62,10 @@ const Hero = ({ navbar }) => {
         </a>
       </div>
 
-      <a href="https://wa.me/972546888735" target="”_blank”">
+      <a
+        href="https://wa.me/972546888735?text=היי%20ירדן,%20הגעתי%20אלייך%20דרך%20האתר"
+        target="”_blank”"
+      >
         <BsWhatsapp
           className={iconRotation ? "hero-whatsapp rotate" : "hero-whatsapp"}
         />
