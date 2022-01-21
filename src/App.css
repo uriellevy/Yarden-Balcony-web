@@ -14,14 +14,3 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-
-/* @media (max-width: 400px) {
-  html {
-    scroll-behavior: smooth;
-    background: url("/src/img/background.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-} */
