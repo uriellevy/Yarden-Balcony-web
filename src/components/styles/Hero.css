@@ -78,10 +78,6 @@
   transform: rotate(720deg) scale(1.25);
 }
 
-/* .hero-whatsapp:hover {
-  transform: rotate(360deg);
-} */
-
 .hero-phone {
   cursor: pointer;
 }
