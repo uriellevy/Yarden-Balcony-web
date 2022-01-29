@@ -71,11 +71,11 @@
   font-size: 40px;
   color: #25d366;
   cursor: pointer;
-  transition: all 1.5s cubic-bezier(0.7, 0.04, 0.66, 1.71);
+  transition: all 3s cubic-bezier(0.7, 0.04, 0.66, 1.71);
 }
 
 .rotate {
-  transform: rotate(360deg) scale(1.25);
+  transform: rotate(720deg) scale(1.25);
 }
 
 /* .hero-whatsapp:hover {

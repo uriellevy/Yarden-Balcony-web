@@ -29,10 +29,9 @@
   margin-bottom: 20px;
   height: 50px;
   border-radius: 10px;
-  /* display: flex; */
   background-color: rgba(255, 255, 255, 0.349);
   border: 1px #fff solid;
-  width: 80%;
+  width: 60%;
   font-size: 20px;
   color: #fff;
   padding: 0 10px;
@@ -67,6 +66,10 @@
 @media (max-width: 500px) {
   .contact {
     background: url("/src/img/contact.jpg") no-repeat center center/cover;
+  }
+
+  .form-control {
+    width: 80%;
   }
 }
 
